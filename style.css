@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+    /*font-family: 'Rubik', sans-serif;*/
+}
+div#p1 .texto h1{
+    font-family: 'Quicksand', sans-serif;
+}
+div#p1 .texto h4{
+    font-family: 'Poppins', sans-serif;
+}
