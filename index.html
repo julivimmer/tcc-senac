@@ -5,48 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styler.css">
     <title>Planilha para controle de gastos - Luciane Vimmer</title>
 </head>
 <body>
 
-<div id="cabecalho" class="row">
+<header>
 
-    <div class="col-7">
-        <img src="img/logo2.png" alt="">
+    <div class="container">
+
+        
+        <img src="img/lucianevimmer.svg" alt="Luciane Vimmer">
+        
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="/sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="/orcamento">Orçamento</a>
+                </li>
+                <li>
+                    <a href="/contato">Contato</a>
+                </li>
+                <li>
+                    <a href="">LUPA</a>
+                </li>
+            </ul>
+        </nav>
+
     </div>
 
-    <div class="col-5, links">
-        <ul>Inicio</ul>
-        <ul>Quem sou eu</ul>
-        <ul>Solicite um orçamento</ul>
-        <ul>Entre em contato</ul>
-        <ul>Lupa</ul>
+</header>
+
+<main>
+
+    <div class="col imgsidep">
+        <img src="img/blob2.png" class="imgside1">
     </div>
+    
 
-</div>
+    <section class="col principal">
 
-<div id="p1">
-
-    <img src="img/blob2.png" class="imgside1">
-
-    <div class="principal">
-        <div class="texto">
+        <div class="container">
             <h1>
-                Titulo
+                A maneira mais eficaz para economizar é controlando os gastos.
             </h1>
-            <h4>
-                subtitulo
-            </h4>
+            <p>
+                E é pensando nisto que estou disponibilizando esta planilha que te ajuda a controlar os gastos facilmente.
+            <p>
         </div>
+
         <div class="form">
             <input type="text" name="" class="nome" placeholder="Seu nome">
             <input type="email" name="" class="email" placeholder="Seu melhor e-mail" required>
             <br>
             <input type="submit" value="Frase cativante">
         </div>
-        <div class="ben">
+
+        <div class="beneficios">
             <div class="m1">
 
             </div>
@@ -60,14 +82,13 @@
 
             </div>
         </div>
-        <div class="imgside2">
 
-        </div>
+    </section>
+
+    <div class="col imgside">
+        <img src="img/planilha.png" alt="Planilha">
     </div>
-    <div class="imgside2">
-        <!-- <img src="img/planilha.png" alt="Seu navegador não suporta imagens.">-->
-    </div>
-</div>
+</main>
 
 </body>
 </html>
