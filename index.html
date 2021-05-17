@@ -2,93 +2,119 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styler.css">
-    <title>Planilha para controle de gastos - Luciane Vimmer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Planilha para Controle de Gastos - Luciane Vimmer
+    </title>
 </head>
 <body>
-
-<header>
-
-    <div class="container">
-
-        
-        <img src="img/lucianevimmer.svg" alt="Luciane Vimmer">
-        
-    
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="/sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="/orcamento">Orçamento</a>
-                </li>
-                <li>
-                    <a href="/contato">Contato</a>
-                </li>
-                <li>
-                    <a href="">LUPA</a>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
-
-</header>
-
-<main>
-
-    <div class="col imgsidep">
-        <img src="img/blob2.png" class="imgside1">
-    </div>
-    
-
-    <section class="col principal">
-
+    <header>
         <div class="container">
-            <h1>
-                A maneira mais eficaz para economizar é controlando os gastos.
-            </h1>
-            <p>
-                E é pensando nisto que estou disponibilizando esta planilha que te ajuda a controlar os gastos facilmente.
-            <p>
+            <img
+             src="/img/lucianevimmer.svg"
+             alt="Luciane Vimmer"
+            />
+
+            <div id="meuMenu" class="sobrepor">
+                <a href="javascript:void(0)" class="fechar" onclick="fecharMenu()"><span class="material-icons-round">cancel</span></a>
+                <nav class="sobrepor-conteudo">
+                    <a href="#">Inicio</a>
+                        
+                    <a href="#">Sobre</a>
+                       
+                    <a href="#">Contato</a>
+                    
+                    <a href="#">Orçamento</a>
+                        
+                    <a href="#">
+                        <span class="material-icons-round">search</span>
+                    </a>
+                </nav>
+            </div>
+
+            <span id="menu" class="material-icons-round" onclick="abrirMenu()" style="cursor: pointer;">menu_open</span>
+
         </div>
+    </header>
 
-        <div class="form">
-            <input type="text" name="" class="nome" placeholder="Seu nome">
-            <input type="email" name="" class="email" placeholder="Seu melhor e-mail" required>
-            <br>
-            <input type="submit" value="Frase cativante">
+    <main>
+        <div class="container">
+            <div class="texto">
+                    <h2>
+                        Deixe as contas de casa em ordem!
+                    </h2>
+                    <p>
+                        Controle suas despesas e organize suas finanças com a nossa Planilha de Orçamento Pessoal.
+                    </p>
+            </div>
+
+            <div class="principal">
+                <div class="form">
+                    <input type="text" name="" class="nome" placeholder="Seu nome">
+                    <input type="email" name="" class="email" placeholder="Seu melhor e-mail" required>
+                    <br>
+                    <input type="submit" value="Frase cativante">
+                </div>
+
+                <div class="ben">
+                    <img
+                    src="img/planilha.png"
+                    alt="Planilha"
+                    /> 
+
+                    <div class="beneficios">
+                        <div class="mtv">
+                            <strong>Personalizavel</strong>
+                            <p>
+                                Exclua e adicione itens que façam sentido para você.
+                            </p>
+                        </div>
+                        <div class="mtv">
+                            <strong>Gráficos</strong>
+                            <p>
+                                Veja de maneira ilustrada os lugares para onde seu dinheiro vai.
+                            </p>
+                        </div>
+                        <div class="mtv">
+                            <strong>Economize</strong>
+                            <p>
+                                Organize melhor suas finanças e dê inicio a tão sonhada poupança.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inc">
+                        <p>
+                            De forma prática e bem simples, você vai deixar suas contas em ordem.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="beneficios">
-            <div class="m1">
 
-            </div>
-            <div class="m2">
 
-            </div>
-            <div class="m3">
-
-            </div>
-            <div class="inc">
-
-            </div>
-        </div>
-
-    </section>
-
-    <div class="col imgside">
-        <img src="img/planilha.png" alt="Planilha">
-    </div>
-</main>
-
+    <!--SCRIPT MENU-->
+    <script>
+        function abrirMenu() {
+          document.getElementById("meuMenu").style.display = "block";
+        }
+        
+        function fecharMenu() {
+          document.getElementById("meuMenu").style.display = "none";
+        }
+    </script>
+          
 </body>
 </html>

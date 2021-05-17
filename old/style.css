@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+/*DIV QUE ENVOLVE O CABEÇALHO INTEIRO*/
+div#cabecalho{
+    background-color:lime;
+    height: 100px;
+
+}
+
+/*AQUI INICIA A PRIMEIRA PARTE DA PAGINA*/
+/*DIV QUE ENVOLVE TODO O CONTEUDO DA PRIMEIRA PARTE DA PAGINA*/
+div#p1{
+    background-color: magenta;
+    height: 500px;
+}
+
+/*DIV DA IMAGEM DETALHE*/
+div#p1 .imgside1{
+    background-color: mediumspringgreen;
+    float: left;
+}
+div#p1 .imgside1 img{
+    height: 496px;
+}
+
+/*DIV QUE ENVOLVE O TITULO, SUBTITULO, FORMULARIO, E BENEFICIOS*/
+div#p1 .principal{
+    background-color: midnightblue;
+    float: left;
+    height: 500px;
+    text-align: center;
+}
+
+/*DIV TEXTO (titulo subtitulo)*/
+div#p1 .texto{
+    margin-top: 50px;
+}
+
+/*DIV FORMULARIO*/
+
+div#p1 .form input[type=text], input[type=email]{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #fafafa;
+    padding: 10px;
+    resize: vertical;
+}
+div#p1 .form input[type=email]{
+    margin-left: 40px;
+}
+div#p1 .form input[type=submit]{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #fafafa;
+    cursor: pointer;
+}
+
+
+
+/*DIV DA IMAGEM PRINCIPAL*/
+div#p1 .imgside2{
+    background-color: navy;
+    float: right;
+    width: fit-content;
+    position: absolute;
+    object-fit: contain;
+}
+div#p1 .imgside2 img{
+    height: 496px;
+}
+
+/*DIV QUE ALTERA O TEXTO DA PRIMEIRA PARTE DA PAGINA*/
+div#p1 .texto h1{
+    font-family: 'Quicksand', sans-serif;
+}
+div#p1 .texto h4{
+    font-family: 'Poppins', sans-serif;
+}
+/*AQUI FINALIZA A PRIMEIRA PARTE DA PAGINA*/

@@ -33,12 +33,11 @@ header .container{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: auto;
 }
 
 header img{
     width: 250px;
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 
 header nav ul{
@@ -57,6 +56,10 @@ header nav ul li a{
     font-weight: bold;
     font-size: 1.4rem;
 
+}
+
+main{
+    display: flex;
 }
 
 main .col {
@@ -101,9 +104,35 @@ main div.imgside img{
 
 
 
+/*verifica o tamanho do dispositivo e aplica o css caso o parametro seja vdd*/
+@media (max-width: 825px){
+    html{
+        font-size: 50%;  
+    }
+}
 
+@media (max-width: 630px){
+    html{
+        font-size: 40%;  
+    }
 
+    header .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
 
+@media (max-width: 320px){
+    html{
+        font-size: 40%;  
+    }
+
+    main .imgside{
+        order: -1;
+    }
+}
 
 
 
