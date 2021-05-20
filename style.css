@@ -5,6 +5,21 @@
     outline: 0;
 }
 
+/*
+Fontes:
+font-family: 'Playfair Display SC', serif;  // Titulos
+font-family: 'Cormorant Garamond', serif;  // Subtitulos
+font-family: 'Montserrat', sans-serif;  // Corpo
+
+Cores:
+#021E73     // Azul escuro
+#30A8F2     // Azul claro
+#7ED9BF     // Azul esverdeado
+#F28729     // Laranja
+#F2EFDF     // Bege claro
+*/
+
+
 html {
     font-size: 62.5%;
 }
@@ -15,15 +30,15 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    color: #2C393F;
-    background-color: #E0FBFC;
+    color: #021e73;
+    background-image: url(/background/2bck-svg-1920x1080.svg);
 }
-
+/*
 header {
     background-color: #D6EADF;
-}
+}*/
 
 header .container{
     display: flex;
@@ -105,9 +120,11 @@ main .texto{
     /*background-color: lightcyan;*/
 }
 
-main .texto h2{
-    font-family: 'Quicksand', sans-serif;
+main .texto h1{
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
+    text-transform: uppercase;
+    font-weight:900;
 }
 
 main .principal{
@@ -176,7 +193,8 @@ main .container .principal .inc{
 }
 
 main .principal img{
-    width: 90%;
+    width: 100%;
+    padding-left: 15px;
 }
 
 /*Muda o tamanho da fonte do menu quando a altura for menor que 450px*/
